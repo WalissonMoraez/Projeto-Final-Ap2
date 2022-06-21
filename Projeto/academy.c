@@ -5,7 +5,7 @@
 void main()
 {
     int cadAdm = 0;
-    int prosseguir;
+    int prosseguir, prosseguir1;
 inicio:
     system("cls");
     printf("                                                   Seja Bem Vindo!\n");
@@ -45,22 +45,22 @@ inicio:
             case 2:
                 goto inicio;
             default:
+                printf("Informacao invalida, digite de novo\n\n");
                 goto cadastro;
             }
             if (cadAdm == 1)
             {
-                printf("");
+                printf("deu certo");
             }
         }
         break;
     case 2:
-        cadastro2:
-        prosseguir == 0;
+    cadastro1:
         system("cls");
         printf("Cadastro de Usuario");
         printf("\n\nCaso queira prosseguir, digite [1].\nCaso queira voltar digite [2].\n");
-        scanf("%d", &prosseguir);
-        switch (prosseguir)
+        scanf("%d", &prosseguir1);
+        switch (prosseguir1)
         {
         case 1:
             system("cls");
@@ -75,8 +75,9 @@ inicio:
         case 2:
             goto inicio;
         default:
-            goto cadastro2;
-        }      
+            printf("Informacao invalida, digite de novo\n\n");
+            goto cadastro1;
+        }
     default:
         system("cls");
         printf("Informacao invalida, escolha novamente!\n\n");
