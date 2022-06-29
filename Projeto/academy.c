@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+#include "menu.h"
 
 void main()
 {
@@ -78,9 +80,32 @@ inicio:
             printf("Informacao invalida, digite de novo\n\n");
             goto cadastro1;
         }
+        break;
     default:
         system("cls");
         printf("Informacao invalida, escolha novamente!\n\n");
         goto inicio;
     }
+            //Escolhendo oque deseja ver
+            PgInicio:
+            switch (menu())
+            {
+            case 1:
+                printf("Treino");
+                goto PgInicio;
+                    case 2:
+                    printf("Nutrição");
+                    goto PgInicio;
+                        case 3:
+                        printf("Contatos");
+                        goto PgInicio;
+                            case 4:
+                            printf("Dados");
+                            system(clear)
+                            goto PgInicio;
+            
+            default:
+                printf("\nValor invalido!");
+                goto PgInicio;
+            }
 }
