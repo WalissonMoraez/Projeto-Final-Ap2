@@ -30,6 +30,7 @@ inicio:
         {
             system("cls");
         cadastro:
+        jose
             printf("Cadastro de Administrador");
             printf("\n\nCaso queira prosseguir, digite [1].\nCaso queira voltar digite [2].\n");
             scanf("%d", &prosseguir);
